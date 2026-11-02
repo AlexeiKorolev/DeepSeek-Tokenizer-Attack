@@ -21,6 +21,8 @@ We applied our attack to the merge lists of:
 * DeepSeek-V3: 38% code, 22% non-English natural language
 * DeepSeek-R1: 56% code, only 7% non-English
 
+> **Caveat (under re-verification):** DeepSeek-R1 is built on the DeepSeek-V3 base model and should share its tokenizer, so the attack would be expected to give the same estimate for both. The divergence above may come from differences in the tokenizer files we used or from a pipeline issue, and we are re-checking it before treating the V3/R1 comparison as a finding.
+
 Compared against:
 * GPT-3.5-turbo (63% code)
 * GPT-4o (high multilinguality)
